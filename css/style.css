@@ -1,0 +1,240 @@
+/* レスポンシブデザイン（スマートフォン） */
+@media screen and (min-width: 320px) {
+  .account-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .account-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .account-icon {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .account-icon {
+    width: 140px;
+    height: 140px;
+  }
+}
+/* @media screen and (max-width: 670px) and (max-width: 800px) {
+  h1,h2,h3 {
+    font-size: 6vw;
+  }
+  h4,h5,h6  {
+    font-size: 3vw;
+  }
+  .account-icon {
+    width: 100px;
+    height: 100px;
+  }
+} */
+
+/* 共通         */
+header {
+  /* background-color: #efefef; */
+}
+
+h1,h2,h3 {
+  font-size: 6vw;
+}
+h4,h5,h6 {
+  font-size: 4vw;
+}
+
+.header-container {
+  background-color:  skyblue;
+  width: 90%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  display:flex;
+}
+
+.header-icon {
+  /* background-color: tomato; */
+  width: 25%;
+  text-align:center;
+}
+.header-icon  img {
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+}
+
+.header-info {
+  /* background-color: tomato; */
+  width: 75%;
+  text-align:center;
+}
+
+tr {
+  text-align: center;
+}
+
+td {
+    vertical-align: top;
+}
+
+.container {
+  max-width: 90%;
+  margin:  0 auto;
+}
+
+.table {
+  width: 100%;
+  background-color: silver;
+  table-layout: fixed;      /* 列幅を均等にする */
+}
+
+.dayinfo {
+  text-align: left;
+  padding: 5px;
+  margin: 10px;
+  word-break : break-all;     /* 文字列を枠内で折り返す */
+  cursor : pointer;           /*  カーソル形状 */
+  font-size: 1vw;             /*  表示エリアのサイズに応じてフォントサイズを変える */
+}
+
+.sun {
+  background-color: #ffccff;
+  text-aligin: center;
+}
+
+.hol {
+  background-color: #ffccff;
+  text-aligin: center;
+}
+
+
+.sat {
+  background-color: #ccffff;
+}
+
+.week {
+  background-color: white;
+}
+
+.none {
+  background-color: silver;
+}
+
+.purple {
+  background-color: purple;
+  border: 1px solid purple;
+  color: white;
+}
+
+.navy {
+  background-color: navy;
+  border: 1px solid navy;
+  color: white;
+}
+
+.green {
+  background-color: green;
+  border: 1px solid green;
+  color: white;
+}
+
+.entry {
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+}
+
+.close {
+  background-color: gray;
+  border: 1px solid gray;
+  color: white;
+}
+
+
+
+.b-radius {
+  border-radius: 5px; /* ボックスの四つ角を丸くする */
+}
+
+
+button.open,button.close {
+  width: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding: 0px 0px;
+  cursor: pointer;
+  border-radius: 3px;
+  /* background: #007bbb; */
+  font-size: 14px;
+  /* border: 1px solid #007bbb; */
+  color: #fff;
+  letter-spacing: .2px;
+  outline: none;
+  transition: background .2s ease, color .2s ease;
+}
+
+img.open {
+  cursor: pointer;
+}
+
+.open:hover,#js-modal-enter:hover,#js-modal-del:hover,#js-modal-Cancel:hover,#js-modal-Cancel:hover,#js-modal-account:hover {
+  color: #000;
+  background-color: transparent;
+}
+
+#js-modal-enter,#js-modal-del,#js-modal-Cancel,#js-modal-account {
+  width: 80px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px 0px;
+  cursor: pointer;
+  border-radius: 3px;
+  /* background: #007bbb; */
+  font-size: 14px;
+  /* border: 1px solid #007bbb; */
+  color: #fff;
+  letter-spacing: .2px;
+  outline: none;
+  transition: background .2s ease, color .2s ease;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.content{
+  margin: 0 auto;
+  padding: 40px;
+}
+.modal{
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.modal__bg{
+  background: rgba(0,0,0,0.4);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+.modal__content{
+  background: #fff;
+  left: 50%;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 250px;
+}
